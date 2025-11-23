@@ -1,8 +1,8 @@
-# 🚀 edgetunnel 2.0
+# 🚀 MiracleTool 2.0
 
 ![Backend Page](./img.png)
 
-- **Latest edgetunnel tutorial**: https://www.youtube.com/watch?v=tKe9xUuFODA ***Must-see! Must-see! Must-see!!!***
+- **Latest MiracleTool tutorial**: https://www.youtube.com/watch?v=tKe9xUuFODA ***Must-see! Must-see! Must-see!!!***
 
 - **Detailed explanation of Error 1101**: https://www.youtube.com/watch?v=r4uVTEJptdE
 
@@ -10,7 +10,7 @@
 
 ## ⚠️ Disclaimer
 
-This disclaimer applies to the "edgetunnel" project on GitHub (hereinafter referred to as "this project"), the project link is: https://github.com/cmliu/edgetunnel.
+This disclaimer applies to the "MiracleTool" project on GitHub (hereinafter referred to as "this project"), the project link is: https://github.com/iemabdullah/MiracleTool.
 
 ### Purpose This project is designed and developed solely for educational, research, and security testing purposes. It aims to provide security researchers, academics, and technology enthusiasts with a tool for exploring and practicing network communication technologies.
 
@@ -52,7 +52,7 @@ The author reserves the right to update this disclaimer at any time without noti
 
 - Create a new Worker in the CF Worker console.
 
-- Paste the contents of [worker.js](https://github.com/cmliu/edgetunnel/blob/main/_worker.js) into the Worker editor.
+- Paste the contents of [worker.js](https://github.com/iemabdullah/MiracleTool/blob/main/_worker.js) into the Worker editor.
 
 - In the `Settings` tab on the left, select `Variables` > `Add Variable`.
 
@@ -85,15 +85,15 @@ Enter **ADMIN** as the variable name and your administrator password as the valu
 
 1. Deploying CF Pages:
 
-- Download the [main.zip](https://github.com/cmliu/edgetunnel/archive/refs/heads/main.zip) file and star it!!!
+- Download the [main.zip](https://github.com/iemabdullah/MiracleTool//archive/refs/heads/main.zip) file and star it!!!
 
-- In the CF Pages console, select `Upload Assets`, name your project, click `Create Project`, then upload the downloaded [main.zip](https://github.com/cmliu/edgetunnel/archive/refs/heads/main.zip) file and click `Deploy Site`.
+- In the CF Pages console, select `Upload Assets`, name your project, click `Create Project`, then upload the downloaded [main.zip](https://github.com/iemabdullah/MiracleTool/archive/refs/heads/main.zip) file and click `Deploy Site`.
 
 - After deployment, click `Continue Processing Site`, then select `Settings` > `Environment Variables` > **Create** a variable for the production environment > `Add Variable`.
 
 Enter `ADMIN` as the variable name and your administrator password as the value, then click `Save`.
 
-- Return to the `Deployment` tab, click `Create New Deployment` in the lower right corner, then re-upload the `[main.zip](https://github.com/cmliu/edgetunnel/archive/refs/heads/main.zip)` file and click `Save and Deploy`.
+- Return to the `Deployment` tab, click `Create New Deployment` in the lower right corner, then re-upload the `[main.zip](https://github.com/iemabdullah/MiracleTool/archive/refs/heads/main.zip)` file and click `Save and Deploy`.
 
 2. Binding a KV Namespace:
 
@@ -109,7 +109,7 @@ Enter `ADMIN` as the variable name and your administrator password as the value,
 
 If your assigned domain is `fuck.cloudns.biz`, then add a custom domain by entering `lizi.fuck.cloudns.biz`.
 
-- As required by Cloudflare, your domain's DNS provider will be returned. Add the CNAME record `edgetunnel.pages.dev` for the custom domain `lizi`, then click `Activate Domain`.
+- As required by Cloudflare, your domain's DNS provider will be returned. Add the CNAME record `MiracleTool` for the custom domain `lizi`, then click `Activate Domain`.
 
 - **If you are a beginner, you can immediately start using your Pages domain after binding a custom domain; you don't need to read further!** **
 
@@ -129,7 +129,7 @@ If your assigned domain is `fuck.cloudns.biz`, then add a custom domain by enter
 
 - Fork this project on GitHub and star it!!!
 
-- In the CF Pages console, select `Connect to Git`, select the `edgetunnel` project, and click `Start Setup`.
+- In the CF Pages console, select `Connect to Git`, select the `MiracleTool` project, and click `Start Setup`.
 
 1. **Set up build and deployment** On the Pages panel, select Environment Variables (Advanced) and then Add a variable.
 
@@ -149,7 +149,7 @@ In the Pages console, on the Custom Domains tab, click Set up a custom domain.
 
 If your assigned domain is `fuck.cloudns.biz`, then add a custom domain by entering `lizi.fuck.cloudns.biz`.
 
-- As required by Cloudn Provider (CF), your domain's DNS service provider will be returned. Add the CNAME record `edgetunnel.pages.dev` for the custom domain `lizi`, then click `Activate Domain`.
+- As required by Cloudn Provider (CF), your domain's DNS service provider will be returned. Add the CNAME record `MiracleTool` for the custom domain `lizi`, then click `Activate Domain`.
 
 - **If you are a beginner, you can start using your Pages application immediately after binding your custom domain; you don't need to read further!**
 
