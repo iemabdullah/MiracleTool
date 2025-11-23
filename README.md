@@ -1,185 +1,244 @@
 # 🚀 edgetunnel 2.0
-![后台页面](./img.png)
 
-- **edgetunnel 最新教程**：https://www.youtube.com/watch?v=tKe9xUuFODA ***必看内容!必看内容!必看内容!!!***
-- **报错 Error 1101 详解**：https://www.youtube.com/watch?v=r4uVTEJptdE
+![Backend Page](./img.png)
 
-- Telegram交流群：[@CMLiussss](https://t.me/CMLiussss)
+- **Latest edgetunnel tutorial**: https://www.youtube.com/watch?v=tKe9xUuFODA ***Must-see! Must-see! Must-see!!!***
 
-## ⚠️ 免责声明
+- **Detailed explanation of Error 1101**: https://www.youtube.com/watch?v=r4uVTEJptdE
 
-本免责声明适用于 GitHub 上的 “edgetunnel” 项目（以下简称“本项目”），项目链接为：https://github.com/cmliu/edgetunnel 。
+- Telegram discussion group: [@CMLiussss](https://t.me/CMLiussss)
 
-### 用途
-本项目仅供教育、研究和安全测试目的而设计和开发。旨在为安全研究人员、学术界人士及技术爱好者提供一个探索和实践网络通信技术的工具。
+## ⚠️ Disclaimer
 
-### 合法性
-在下载和使用本项目代码时，必须遵守使用者所适用的法律和规定。使用者有责任确保其行为符合所在地区的法律框架、规章制度及其他相关规定。
+This disclaimer applies to the "edgetunnel" project on GitHub (hereinafter referred to as "this project"), the project link is: https://github.com/cmliu/edgetunnel.
 
-### 免责
-1. 作为本项目的 **二次开发作者**（以下简称“作者”），我 **cmliu** 强调本项目仅应用于合法、道德和教育目的。
-2. 作者不认可、不支持亦不鼓励任何形式的非法使用。如果发现本项目被用于任何非法或不道德的活动，作者将对此强烈谴责。
-3. 作者对任何人或组织利用本项目代码从事的任何非法活动不承担责任。使用本项目代码所产生的任何后果，均由使用者自行承担。
-4. 作者不对使用本项目代码可能引起的任何直接或间接损害负责。
-5. 为避免任何意外后果或法律风险，使用者应在使用本项目代码后的 24 小时内删除代码。
+### Purpose This project is designed and developed solely for educational, research, and security testing purposes. It aims to provide security researchers, academics, and technology enthusiasts with a tool for exploring and practicing network communication technologies.
 
-通过使用本项目代码，使用者即表示理解并同意本免责声明的所有条款。如使用者不同意这些条款，应立即停止使用本项目。
+### Legality
 
-作者保留随时更新本免责声明的权利，且不另行通知。最新版本的免责声明将发布在本项目的 GitHub 页面上。
+When downloading and using this project code, users must comply with applicable laws and regulations. Users are responsible for ensuring their actions comply with the legal framework, regulations, and other relevant provisions of their region.
 
-## 🔥 风险提示
-- 通过提交虚假的节点配置给订阅服务，避免节点配置信息泄露。
-- 另外，您也可以选择自行部署 [WorkerVless2sub 订阅生成服务](https://github.com/cmliu/WorkerVless2sub)，这样既可以利用订阅生成器的便利。
-   
-## 💡 如何使用?
-### ⚙️ Workers 部署方法 [视频教程](https://www.youtube.com/watch?v=tKe9xUuFODA&t=191s)
+### Disclaimer
+
+1. As the **author of secondary development** of this project (hereinafter referred to as the "Author"), I, **cmliu**, emphasize that this project is intended solely for legal, ethical, and educational purposes.
+
+2. The Author does not endorse, support, or encourage any form of illegal use. The Author strongly condemns any use of this project for any illegal or unethical activities.
+
+3. The Author assumes no responsibility for any illegal activities undertaken by any person or organization using this project code. Users are solely responsible for any consequences arising from the use of this project code.
+
+4. The Author is not liable for any direct or indirect damages that may arise from the use of this project code.
+
+5. To avoid any unforeseen consequences or legal risks, users should delete the code within 24 hours of use.
+
+By using this project code, users acknowledge and agree to all terms of this disclaimer. If you do not agree to these terms, you should immediately stop using this project.
+
+The author reserves the right to update this disclaimer at any time without notice. The latest version of the disclaimer will be published on the project's GitHub page.
+
+## 🔥 Risk Warning
+
+- Avoid node configuration information leakage by submitting fake node configurations to the subscription service.
+
+- Alternatively, you can choose to deploy the [WorkerVless2sub subscription generation service](https://github.com/cmliu/WorkerVless2sub) yourself, which allows you to take advantage of the convenience of the subscription generator.
+
+## 💡 How to Use?
+
+### ⚙️ Workers Deployment Method [Video Tutorial](https://www.youtube.com/watch?v=tKe9xUuFODA&t=191s)
 
 <details>
-<summary><code><strong>「 Workers 部署文字教程 」</strong></code></summary>
 
-1. 部署 CF Worker：
-   - 在 CF Worker 控制台中创建一个新的 Worker。
-   - 将 [worker.js](https://github.com/cmliu/edgetunnel/blob/main/_worker.js) 的内容粘贴到 Worker 编辑器中。
-   - 在左侧的 `设置`选项卡中，选择 `变量` > `添加变量`。
-     变量名称填写**ADMIN**，值则为你的管理员密码，后点击 `保存`即可。
+<summary><code><strong>“Workers Deployment Text Tutorial”</strong></code></summary>
 
-2. 绑定 KV 命名空间：
-   - 在 `绑定`选项卡中选择 `添加绑定 +` > `KV 命名空间` > `添加绑定`，然后选择一个已有的命名空间或创建一个新的命名空间进行绑定。
-   - `变量名称`填写**KV**，然后点击 `添加绑定`即可。
+1. Deploying CF Workers:
 
-3. 给 Workers绑定 自定义域： 
-   - 在 workers控制台的 `触发器`选项卡，下方点击 `添加自定义域`。
-   - 填入你已转入 CF 域名解析服务的次级域名，例如:`vless.google.com`后 点击`添加自定义域`，等待证书生效即可。
-   - **如果你是小白，你现在可以直接起飞，不用再往下看了！！！**
+- Create a new Worker in the CF Worker console.
 
-4. 访问后台：
-   - 访问 `https://vless.google.com/admin` 输入管理员密码即可登录后台。
+- Paste the contents of [worker.js](https://github.com/cmliu/edgetunnel/blob/main/_worker.js) into the Worker editor.
+
+- In the `Settings` tab on the left, select `Variables` > `Add Variable`.
+
+Enter **ADMIN** as the variable name and your administrator password as the value, then click `Save`.
+
+2. Bind a Key-Value Namespace:
+
+- In the `Bindings` tab, select `Add Binding +` > `Key-Value Namespace` > `Add Binding`, then select an existing namespace or create a new one to bind.
+
+- Enter **KV** as the `Variable Name`, then click `Add Binding`.
+
+3. Bind a Custom Domain to Workers:
+
+- In the Workers console, in the `Triggers` tab, click `Add Custom Domain`.
+
+- Enter your subdomain that you have transferred to the CF DNS service, for example: `vless.google.com`, then click `Add Custom Domain` and wait for the certificate to take effect.
+
+- **If you are a beginner, you can jump right in now and don't need to read any further!!!**
+
+4. Access the Backend:
+
+- Visit `https://vless.google.com/admin` and enter the administrator password to log in to the backend.
 
 </details>
 
-### 🛠 Pages 上传 部署方法 **最佳推荐!!!** [视频教程](https://www.youtube.com/watch?v=tKe9xUuFODA&t=436s)
+### 🛠 Pages Upload and Deployment Method **Best Recommendation!!!** [Video Tutorial](https://www.youtube.com/watch?v=tKe9xUuFODA&t=436s)
 
 <details>
-<summary><code><strong>「 Pages 上传文件部署文字教程 」</strong></code></summary>
+<summary><code><strong>“Pages File Upload and Deployment Text Tutorial”</strong></code></summary>
 
-1. 部署 CF Pages：
-   - 下载 [main.zip](https://github.com/cmliu/edgetunnel/archive/refs/heads/main.zip) 文件，并点上 Star !!!
-   - 在 CF Pages 控制台中选择 `上传资产`后，为你的项目取名后点击 `创建项目`，然后上传你下载好的 [main.zip](https://github.com/cmliu/edgetunnel/archive/refs/heads/main.zip) 文件后点击 `部署站点`。
-   - 部署完成后点击 `继续处理站点` 后，选择 `设置` > `环境变量` > **制作**为生产环境定义变量 > `添加变量`。
-     变量名称填写**ADMIN**，值则为你的管理员密码，后点击 `保存`即可。
-   - 返回 `部署` 选项卡，在右下角点击 `创建新部署` 后，重新上传 [main.zip](https://github.com/cmliu/edgetunnel/archive/refs/heads/main.zip) 文件后点击 `保存并部署` 即可。
+1. Deploying CF Pages:
 
-2. 绑定 KV 命名空间：
-   - 在 `设置`选项卡中选择 `绑定` > `+ 添加` > `KV 命名空间`，然后选择一个已有的命名空间或创建一个新的命名空间进行绑定。
-   - `变量名称`填写**KV**，然后点击 `保存`后重试部署即可。
+- Download the [main.zip](https://github.com/cmliu/edgetunnel/archive/refs/heads/main.zip) file and star it!!!
 
-3. 给 Pages绑定 CNAME自定义域：[视频教程](https://www.youtube.com/watch?v=LeT4jQUh8ok&t=851s)
-   - 在 Pages控制台的 `自定义域`选项卡，下方点击 `设置自定义域`。
-   - 填入你的自定义次级域名，注意不要使用你的根域名，例如：
-     您分配到的域名是 `fuck.cloudns.biz`，则添加自定义域填入 `lizi.fuck.cloudns.biz`即可；
-   - 按照 CF 的要求将返回你的域名DNS服务商，添加 该自定义域 `lizi`的 CNAME记录 `edgetunnel.pages.dev` 后，点击 `激活域`即可。
-   - **如果你是小白，那么你的 pages 绑定`自定义域`之后即可直接起飞，不用再往下看了！！！**
-   
-4. 访问后台：
-   - 访问 `https://lizi.fuck.cloudns.biz/admin` 输入管理员密码即可登录后台。
+- In the CF Pages console, select `Upload Assets`, name your project, click `Create Project`, then upload the downloaded [main.zip](https://github.com/cmliu/edgetunnel/archive/refs/heads/main.zip) file and click `Deploy Site`.
+
+- After deployment, click `Continue Processing Site`, then select `Settings` > `Environment Variables` > **Create** a variable for the production environment > `Add Variable`.
+
+Enter `ADMIN` as the variable name and your administrator password as the value, then click `Save`.
+
+- Return to the `Deployment` tab, click `Create New Deployment` in the lower right corner, then re-upload the `[main.zip](https://github.com/cmliu/edgetunnel/archive/refs/heads/main.zip)` file and click `Save and Deploy`.
+
+2. Binding a KV Namespace:
+
+- In the `Settings` tab, select `Binding` > `+ Add` > `KV Namespace`, then select an existing namespace or create a new one to bind.
+
+- Enter `KV` as the `Variable Name`, then click `Save` and retry the deployment.
+
+3. Bind a custom CNAME record to Pages: [Video Tutorial](https://www.youtube.com/watch?v=LeT4jQUh8ok&t=851s)
+
+- In the Pages console, on the `Custom Domain` tab, click `Set Up Custom Domain`.
+
+- Enter your custom subdomain. Do not use your root domain. For example:
+
+If your assigned domain is `fuck.cloudns.biz`, then add a custom domain by entering `lizi.fuck.cloudns.biz`.
+
+- As required by Cloudflare, your domain's DNS provider will be returned. Add the CNAME record `edgetunnel.pages.dev` for the custom domain `lizi`, then click `Activate Domain`.
+
+- **If you are a beginner, you can immediately start using your Pages domain after binding a custom domain; you don't need to read further!** **
+
+4. Accessing the Backend:
+
+- Visit `https://lizi.fuck.cloudns.biz/admin` and enter the administrator password to log in to the backend.
 
 </details>
 
-### 🛠 Pages GitHub 部署方法 [视频教程](https://www.youtube.com/watch?v=tKe9xUuFODA&t=317s)
+### 🛠 Pages GitHub Deployment Method [Video Tutorial](https://www.youtube.com/watch?v=tKe9xUuFODA&t=317s)
 
 <details>
-<summary><code><strong>「 Pages GitHub 部署文字教程 」</strong></code></summary>
 
-1. 部署 CF Pages：
-   - 在 Github 上先 Fork 本项目，并点上 Star !!!
-   - 在 CF Pages 控制台中选择 `连接到 Git`后，选中 `edgetunnel`项目后点击 `开始设置`。
-   - 在 `设置构建和部署`页面下方，选择 `环境变量（高级）`后并 `添加变量`
-     变量名称填写**ADMIN**，值则为你的管理员密码，后点击 `保存并部署`即可。
+<summary><code><strong>「Pages GitHub Deployment Text Tutorial」</strong></code></summary>
 
-2. 绑定 KV 命名空间：
-   - 在 `设置`选项卡中选择 `绑定` > `+ 添加` > `KV 命名空间`，然后选择一个已有的命名空间或创建一个新的命名空间进行绑定。
-   - `变量名称`填写**KV**，然后点击 `保存`后重试部署即可。
+1. Deploying CF Pages:
 
-3. 给 Pages绑定 CNAME自定义域：[视频教程](https://www.youtube.com/watch?v=LeT4jQUh8ok&t=851s)
-   - 在 Pages控制台的 `自定义域`选项卡，下方点击 `设置自定义域`。
-   - 填入你的自定义次级域名，注意不要使用你的根域名，例如：
-     您分配到的域名是 `fuck.cloudns.biz`，则添加自定义域填入 `lizi.fuck.cloudns.biz`即可；
-   - 按照 CF 的要求将返回你的域名DNS服务商，添加 该自定义域 `lizi`的 CNAME记录 `edgetunnel.pages.dev` 后，点击 `激活域`即可。
-   - **如果你是小白，那么你的 pages 绑定`自定义域`之后即可直接起飞，不用再往下看了！！！**
+- Fork this project on GitHub and star it!!!
 
-4. 访问后台：
-   - 访问 `https://lizi.fuck.cloudns.biz/admin` 输入管理员密码即可登录后台。
+- In the CF Pages console, select `Connect to Git`, select the `edgetunnel` project, and click `Start Setup`.
+
+1. **Set up build and deployment** On the Pages panel, select Environment Variables (Advanced) and then Add a variable.
+
+Name the variable with **ADMIN** and set the value to your administrator password. Then click Save and Deploy.
+
+2. **Bind KV Namespace**:
+
+In the Settings tab, select Bindings > Add > KV Namespace. Choose an existing namespace or create a new one to bind.
+
+Name the variable with **KV** and click Save. Then try deploying again.
+
+3. **Bind a custom CNAME domain to Pages:** [Video Tutorial](https://www.youtube.com/watch?v=LeT4jQUh8ok&t=851s)
+
+In the Pages console, on the Custom Domains tab, click Set up a custom domain.
+
+- Enter your custom subdomain. Do not use your root domain. For example:
+
+If your assigned domain is `fuck.cloudns.biz`, then add a custom domain by entering `lizi.fuck.cloudns.biz`.
+
+- As required by Cloudn Provider (CF), your domain's DNS service provider will be returned. Add the CNAME record `edgetunnel.pages.dev` for the custom domain `lizi`, then click `Activate Domain`.
+
+- **If you are a beginner, you can start using your Pages application immediately after binding your custom domain; you don't need to read further!**
+
+4. Accessing the Backend:
+
+- Visit `https://lizi.fuck.cloudns.biz/admin` and enter the administrator password to log in to the backend.
 
 </details>
 
-## 🔑 变量说明
+## 🔑 Variable Description
 
-| 变量名 | 示例 | 必填 | 备注 |
+| Variable Name | Example | Required | Remarks |
+
 |--------|---------|-|-----|
-| ADMIN | `123456` |✅| 面板登录密码 |
-| KEY | `token` |❌| 快速订阅密钥，访问`/token`即可快读订阅。 |
-| UUID | `90cd4a77-141a-43c9-991b-08263cfe9c10` |❌| 强制使用固定UUID |
-| PROXYIP | `proxyip.cmliussss.net:443` |❌| 更换默认内置PROXYIP |
-| URL | `https://blog.cmliussss.com` |❌| 主页反代伪装(乱设容易触发反诈，反代被墙的网站会加速域名被墙) |
-| GO2SOCKS5  | `blog.cmliussss.com`,`*.ip111.cn`,`*google.com` |❌| 设置`SOCKS5`或`HTTP`变量之后，可设置强制使用socks5访问名单(设置为`*`可作为全局代理) |
 
-## 🔧 实用技巧
-该项目部署的节点可通过节点PATH(路径)的方式，使用指定的`PROXYIP`或`SOCKS5`！！！**
+| ADMIN | `123456` |✅| Panel Login Password |
 
-- 指定 `PROXYIP` 案例
-   ```url
-   /proxyip=proxyip.cmliussss.net
-   /?proxyip=proxyip.cmliussss.net
-   /proxyip.cmliussss.net (仅限于域名开头为'proxyip.'的域名)
-   ```
+| KEY | `token` |❌| Quick subscription key, access `/token` to quickly subscribe. | | UUID | `90cd4a77-141a-43c9-991b-08263cfe9c10` |❌| Force use of a fixed UUID |
 
-- 指定 `SOCKS5` 案例
-   ```url
-   /socks5=user:password@127.0.0.1:1080
-   /?socks5=user:password@127.0.0.1:1080
-   /socks://dXNlcjpwYXNzd29yZA==@127.0.0.1:1080 (默认激活全局SOCKS5)
-   /socks5://user:password@127.0.0.1:1080 (默认激活全局SOCKS5)
-   ```
+| PROXYIP | `proxyip.cmliussss.net:443` |❌| Change the default built-in PROXYIP |
 
-- 指定 `HTTP代理` 案例
-   ```url
-   /http=user:password@127.0.0.1:1080
-   /http://user:password@127.0.0.1:8080 (默认激活全局SOCKS5)
-   ```
+| URL | `https://blog.cmliussss.com` |❌| Homepage reverse proxy spoofing (random settings easily trigger anti-fraud measures; reverse proxying blocked websites will accelerate the domain's blocking) |
 
-## ⭐ Star 星星走起
+| GO2SOCKS5 | `blog.cmliussss.com`,`*.ip111.cn`,`*google.com` |❌| After setting the `SOCKS5` or `HTTP` variable, you can set a list of websites that force the use of SOCKS5 access (setting it to `*` can act as a global proxy) |
+
+## 🔧 Practical Tips: The nodes deployed in this project can use specified `PROXYIP` or `SOCKS5` via the node's PATH (path)! **
+
+- Specify `PROXYIP` Example
+
+``url
+
+/proxyip=proxyip.cmliussss.net
+
+/?proxyip=proxyip.cmliussss.net
+
+/proxyip.cmliussss.net (Only applicable to domains starting with 'proxyip.')
+
+```
+
+- Specify `SOCKS5` Example
+
+``url
+
+/socks5=user:password@127.0.0.1:1080
+
+/?socks5=user:password@127.0.0.1:1080
+
+/socks://dXNlcjpwYXNzd29yZA==@127.0.0.1:1080 (Global SOCKS5 activated by default)
+
+/socks5://user:password@127.0.0.1:1080 (Global SOCKS5 activated by default) ```
+
+- Specify `HTTP Proxy` Example
+
+```url
+
+/http=user:password@127.0.0.1:1080
+
+/http://user:password@127.0.0.1:8080 (Default global SOCKS5 activation)
+
+```
+
+## ⭐ Star Give It a Star!
+
 [![Stargazers over time](https://starchart.cc/cmliu/edgetunnel.svg?variant=adaptive)](https://starchart.cc/cmliu/edgetunnel)
 
-## 💻 已适配客户端
+## 💻 Client Compatible
+
 ### Windows
-   - [v2rayN](https://github.com/2dust/v2rayN)
-   - clash.meta（[FlClash](https://github.com/chen08209/FlClash)，[mihomo-party](https://github.com/mihomo-party-org/mihomo-party)，[clash-verge-rev](https://github.com/clash-verge-rev/clash-verge-rev)，[Clash Nyanpasu](https://github.com/keiko233/clash-nyanpasu)）
-### IOS
-   - Surge，小火箭
-   - sing-box（[SFI](https://sing-box.sagernet.org/zh/clients/apple/)）
-### 安卓
-   - clash.meta（[ClashMetaForAndroid](https://github.com/MetaCubeX/ClashMetaForAndroid)，[FlClash](https://github.com/chen08209/FlClash)）
-   - sing-box（[SFA](https://github.com/SagerNet/sing-box)）
+
+- [v2rayN](https://github.com/2dust/v2rayN)
+
+- clash.meta([FlClash](https://github.com/chen08209/FlClash),[mihomo-party](https://github.com/mihomo-party-org/mihomo-party),[clash-verge-rev](https://github.com/clash-verge-rev/clash-verge-rev),[Clash Nyanpasu](https://github.com/keiko233/clash-nyanpasu)）
+### IOS 
+- Surge, little rocket 
+- sing-box（[SFI](https://sing-box.sagernet.org/zh/clients/apple/)）
+### Android 
+- clash.meta ([ClashMetaForAndroid](https://github.com/MetaCubeX/ClashMetaForAndroid), [FlClash](https://github.com/chen08209/FlClash)) 
+- sing-box ([SFA](https://github.com/SagerNet/sing-box))
+
 ### MacOS
-   - clash.meta（[FlClash](https://github.com/chen08209/FlClash)，[mihomo-party](https://github.com/mihomo-party-org/mihomo-party)）
 
+- clash.meta ([FlClash](https://github.com/chen08209/FlClash), [mihomo-party](https://github.com/mihomo-party-org/mihomo-party))
 
-# 🙏 特别鸣谢
-### 💖 赞助支持 - 提供云服务器维持[订阅转换服务](https://sub.cmliussss.net/)
+# 🙏 Special Thanks
+
+### 💖 Sponsorship Support - Providing cloud servers to maintain [Subscription Conversion Service](https://sub.cmliussss.net/)
+
 - [NodeLoc](https://www.nodeloc.com/)
-- [Alice](https://url.cmliussss.com/alice)
-- [EasyLinks](https://www.vmrack.net?ref_code=5Zk7eNhbgL7)
-- [ZMTO(VTEXS)](https://zmto.com/?affid=1532)
 
-### 🛠 开源代码引用
-- [zizifn/edgetunnel](https://github.com/zizifn/edgetunnel)
-- [3Kmfi6HP/EDtunnel](https://github.com/6Kmfi6HP/EDtunnel)
-- [SHIJS1999/cloudflare-worker-vless-ip](https://github.com/SHIJS1999/cloudflare-worker-vless-ip)
-- [Stanley-baby](https://github.com/Stanley-baby)
-- [ACL4SSR](https://github.com/ACL4SSR/ACL4SSR/tree/master/Clash/config)
-- [股神](https://t.me/CF_NAT/38889)
-- [Workers/Pages Metrics](https://t.me/zhetengsha/3382)
-- [白嫖哥](https://t.me/bestcfipas)
-- [Mingyu](https://github.com/ymyuuu/workers-vless)
-- [Alexandre Kojève](https://t.me/Enkelte_notif/784)：stallTCP v1.3
-- [eooce](https://github.com/eooce/Cloudflare-proxy)
+- [Alice](https://url.cmliussss.com/alice)
+
+- [EasyLinks](https://www.vmrack.net?ref_code=5Zk7eNhbgL7)
